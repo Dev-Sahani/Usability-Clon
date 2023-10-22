@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Reset section */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    /* --another-text-color: ; */
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+h1{
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* utility classes */
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    text-align: center;
+    padding: var(--padding-inline-section);
+    margin: 0px auto 0px;
+}
+.small-bold-text{
+    font-weight: 400;
+}
+.small-bold-text p{
+    font-size: 0.9rem;
+    color: white;
+}
+.top-banner{
+    background-color: #e74694;
+    background-image: url('./assets/asset\ 32.png');
+    background-size: 300px;
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+.top-banner .container{
+    padding: 0px;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.main-nav-left{
+    display: flex;
+    column-gap: 10px;
+}
+#nav-img1{
+    display: inline-block;
+    width: 170px;
+    vertical-align: middle;
+}
+#next-to-nav-img1{
+    background-image: url(./assets/asset\ 33.svg);
+    background-position: 50% 50%;
+    color: var(--secondary-text-color);
+    padding: 5px 5px 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+    height: 33px;
+    margin-right: 20px;
+}
+
+.main-nav-right ul{
+    list-style: none;
+    display: flex;
+    column-gap: 25px;
+    color: var(--secondary-text-color);
+}
+.main-nav-right a{
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+.nav-last-button{
+    margin-right: 50px;
+}
+.service {
+    padding-top: 7px;
+    align-items: center;
+    word-wrap: no wrap;
+}
+.primary-button{
+    background-color: white ;
+    border: 1px solid rgb(165, 160, 160);
+    border-radius: 3px;
+    color: var(--primary-text-color);
+    padding: 8px 20px;
+}
+.primary-button:hover{
+    box-shadow: 0px 0px 2px var(--accent-color);
+    color: var(--accent-color);
+}
+.secondary-button{
+    background-color: var(--accent-color);
+    border: 1px solid rgb(165, 160, 160);
+    border-radius: 3px;
+    color: white !important;
+    padding: 8px 20px;
+}
+.secondary-button:hover{
+    background-color: var(--accent-color-dark);
+
+}
+
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-left {
+    align-items: flex-start;
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    flex-shrink: 1;
+    justify-content: center;
+    text-align: start;
+    padding: 10px;
+}
+.header-left p{
+    margin: 10px 0px 20px;
+}
+.header-right {
+    width: 50%;
+    flex-shrink: 1;
+
+    /* overflow: hidden; */
+}
+.header-image {
+    width: 100%;
+    /* object-fit: cover; */
+}
+.companies-section{
+    padding: 25px 0px;
+}
+.companies-section .container{
+    padding: 20px 0px;
+}
+.companies-section p {
+    font-size: larger;
+    font-weight: 550;
+}
+.companies-imgs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+}
+.company img{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.taskRabbit{
+    max-width: 200px;
+}
+.GoDaddy {
+    max-width: 180px;
+}
+
+
+.features-section {
+    background-image: url(assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+}
+.box1 h3{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    justify-content: center;
+    row-gap: 40px;
+
+}
+.feature{
+    max-width: 30%;
+}
+.feature h3{
+    font-weight: 500;
+}
+.feature p {
+    padding: 10px 5px 15px;
+}
+.feature img {
+    max-width: 40px;
+}
+
+.big-feature-container {
+    margin: 100px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.big-feature-left{
+    max-width: 45%;
+    margin-right: 20px;
+    min-width: 346px;
+}
+.big-feature-left img{
+    max-width: 100%;
+}
+.big-feature-right {
+    max-width: 45%;
+    min-width: 34px;
+}
+.big-feature-right h3{
+    margin: 20px 0px;
+    font-weight: 500;
+}
+.big-feature-right h4 {
+    margin: 20px 0px 0px;
+    font-weight: 500;
+}
+.para1 {
+    padding-left: 20px;
+    text-align: start;
+}
+.para1 h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 10px 0px 15px;
+}
+.para1 h4 {
+    font-size: 1.2rem;
+    margin-top: 0px;
+}
+.para2 {
+    text-align: start;
+}
+.para2 h4{
+    padding-left: 22px;
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+}
+.quotes-para {
+    color: var(--primary-text-color);
+    background-image: url(assets/asset\ 35.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.person {
+    display: flex;
+    padding-left: 25px;
+    margin-top: 20px;
+    line-height: 1rem;
+}
+.person img {
+    float: right;
+    max-width: 50px;
+    max-height: 50px;
+    vertical-align: middle;
+}
+.person-name-title {
+    align-self: center;
+}
+.person h3{
+    margin: 8px 0px 0px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+.person p{
+    font-size: 0.9rem;
+    padding-left: 10px;
+}
+
+.big-features-section2 .big-feature-container{
+    flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+    .header-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header-left {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .header-right {
+        width: 70%;
+    }
+}
